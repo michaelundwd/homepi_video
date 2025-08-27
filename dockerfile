@@ -1,6 +1,6 @@
 
 ###########################################################################
-#   Dockerfile for docker image to upload ftp videos                      #
+#   Dockerfile for docker image that will upload .mp4 videos via ftp      #
 #   from Reolink security camera to \\homeserver\Video\RearGarden         #
 #   It uses inotifywait to watch for ftp uploads                          #
 #   and Rsync to upload .mp4 files to the homeserver                      #
