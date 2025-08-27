@@ -17,7 +17,7 @@ FROM alpine:latest
 RUN mkdir /homepi_home_mju_videos /homeserver_video_reargarden
 RUN apk add inotify-tools rsync tzdata --no-cache
 
-ENV TZ: "Europe/London"
+ENV TZ="Europe/London"
 # need the next line as TZ line has no effect
 RUN cp /usr/share/zoneinfo/Europe/London /etc/localtime
 
