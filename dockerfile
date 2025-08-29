@@ -15,7 +15,9 @@
 FROM alpine:latest
 
 RUN mkdir /homepi_home_mju_videos /homeserver_video_reargarden homepi_opt
-RUN apk add inotify-tools rsync tzdata --no-cache
+RUN apk add inotify-tools rsync tzdata coreutils --no-cache
+
+# coreutils only needed to run the sed code in entrypoint
 
 ENV TZ="Europe/London"
 # need the next line as TZ line has no effect
