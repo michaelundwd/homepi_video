@@ -9,7 +9,7 @@
 #   /homeserver_video_reargarden > /mnt/homeserver_video_reargarden (sync)#
 #   /homepi_opt > /opt                                                    #
 #   entrypoint.sh contains the inotify code and daily folder tidy         #
-#   last updated 20240311                                                 #
+#   last updated 20250830                                                 #
 ###########################################################################
 
 FROM alpine:latest
