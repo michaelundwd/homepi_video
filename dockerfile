@@ -28,5 +28,5 @@ RUN chmod +x ./entrypoint.sh
 
 ENTRYPOINT ["./entrypoint.sh"]
 
-CMD ["crond","-f"] 
+CMD crond -f 
 
