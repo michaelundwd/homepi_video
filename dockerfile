@@ -9,7 +9,7 @@
 #   /homeserver_video_reargarden > /mnt/homeserver_video_reargarden (sync)#
 #   /homepi_opt > /opt                                                    #
 #   entrypoint.sh contains the inotify code and daily folder tidy         #
-#   last updated 20250830                                                 #
+#   last updated 20250902                                                 #
 ###########################################################################
 
 FROM alpine:latest
@@ -28,5 +28,5 @@ RUN chmod +x ./entrypoint.sh
 
 ENTRYPOINT ["./entrypoint.sh"]
 
-CMD crond -f 
+CMD ["crond","-f"] 
 
