@@ -20,7 +20,7 @@ ENV TZ="Europe/London"
 # need the next line as TZ line has no effect
 RUN cp /usr/share/zoneinfo/Europe/London /etc/localtime
 
-COPY entrypoint.sh .
-RUN chmod +x ./entrypoint.sh
-ENTRYPOINT ["./entrypoint.sh"]
+# COPY entrypoint.sh .
+# RUN chmod +x ./entrypoint.sh
+ENTRYPOINT ["/homepi_opt/video/startup.sh"]
 
