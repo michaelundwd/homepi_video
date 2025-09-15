@@ -1,15 +1,8 @@
-###########################################################################
-# Dockerfile for docker image that will upload .mp4 videos via ftp      #
-# from Reolink security camera to \\homeserver\Video\RearGarden         #
-# It uses inotifywait to watch for ftp uploads                          #
-# and Rsync to upload .mp4 files to the homeserver                      #
-# Requires the following bind mounts in Portainer:                      #
-# /homepi_home_mju_videos > /home/mju/Videos (watch)                    #
-# /homepi_opt > /opt                                                    #
-# /homeserver_video_reargarden > /mnt/homeserver_video_reargarden (sync)#
-# entrypoint.sh contains the inotify code and rsync commands            #
-# last updated 14/09/2025                                               #
-###########################################################################
+#################################################################
+# Moves .mp4 files ftp'd from rear garden camera to homeserver  #
+# more information in ReadMe                                    #
+# last updated 15/09/2025                                       #
+#################################################################
 
 FROM alpine:latest
 
